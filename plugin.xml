@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.toast_notification"
+    version="0.1.0">
+    <name>Toast Notification</name>
+    <description>Cordova Toast Notification Plugin</description>
+    <license>GPL v3</license>
+    <keywords>cordova,toast</keywords>
+    <repo>https://github.com/Linkpass/Toast.git</repo>
+    <issue>https://github.com/Linkpass/Toast/issues</issue>
+
+    <js-module src="www/toast_notification.js" name="toast_notification">
+        <clobbers target="Toast_Notification" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Toast_Notification" >
+                <param name="android-package" value="org.apache.cordova.toast_notification.Toast_Notification"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Toast_Notification.java" target-dir="src/org/apache/cordova/toast_notification" />
+    </platform>
+
+</plugin>

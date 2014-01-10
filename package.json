@@ -1,0 +1,13 @@
+{
+    "version": "0.1.0",
+    "name": "org.apache.cordova.toast_notification",
+    "cordova_name": "Toast Notification",
+    "description": "Cordova Toast Notification Plugin",
+    "license": "GPL v3",
+    "keywords": [
+        "cordova",
+        "toast",
+		"notification"
+    ],
+    "engines": []
+}
